@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/sign_up_page.css">
+    <script src="../javascript/sign_up_page.js"></script>
+    <title>Sign Up Page</title>
+</head>
+<body>
+    <div class="signup">
+        <h1>Sign Up</h1>
+        <form method="POST" action="">
+            <p>
+                <label>User Name:</label>
+                <input type="text" name="username" id="username" value="" placeholder="Username or Email">
+            </p>
+            <p>
+                <label>First Name:</label>
+                <input type="text" name="firstname" value="" placeholder="First Name">
+            </p>
+            <p>
+                <label>Last Name:</label>
+                <input type="text" name="lastname" value="" placeholder="Last Name">
+            </p>
+            <p>
+                <label>Phone Number :</label>
+                <input type="text" name="phonenumber" value="" placeholder="Phone Number">
+            </p>
+            <p>
+                <label>DOB:</label>
+                <input type="date" name="dateofbirth" value="" placeholder="Date Of Birth">
+            </p>
+            <p>
+                <label>Passowrd:</label>
+                <input type="password" name="password" id="password" value="" placeholder="Passowrd">
+            </p>
+            <p>
+                <label>confirmpassword:</label>
+                <input type="password" name="confirmpassword" id="confirmpassword" value="" placeholder="Confirm Password">
+            </p>
+
+
+            <p class="submit">
+                <input type="button" name="signup" value="Sign Up" onclick="return signup_validation()">
+                <input type="button" name="cancel" value="Cancel" onclick="return cancelform()">
+            </p>
+
+        </form>
+
+    </div>
+</body>
+</html>

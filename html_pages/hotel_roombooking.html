@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/hotel_roombooking.css">
+    <script src="../javascript/hotel_roombooking.js"></script>
+    <title>Hotel Registration</title>
+</head>
+<body>
+    <div class="register">
+        <h1>Hotel Registration</h1>
+        <form method="POST" action="" name="hotel_roombooking" id="hotel_roombooking">
+            <p>
+                <input type="text" name="firstname" value="" id ="name" placeholder="First Name">
+            </p>
+            <p>
+                <input type="text" name="lastname" value="" id="lastname" placeholder="Last Name">
+            </p>
+            <p>
+                <input type="text" name="phonenumber" value="" id="phonenumber" placeholder="Phone Number">
+            </p>
+            <p>
+                <div class="smalltext">
+                    <p>
+                        <input type="text" name="Street" value="" id="Street" placeholder="Street">
+                        <input type="text" name="number" value="" id="number" placeholder="Number">
+                    </p>
+                    <p>
+                        <input type="text" name="city" value="" id="city" placeholder="City">
+                        <input type="text" name="postcode" value="" id="postcode" placeholder="PostCode">
+                    </p>
+
+                </div>
+
+            </p>
+
+            <p>
+                <input type="text" name="country" value="" id="country" placeholder="Country">
+            </p>
+            <br/>
+
+            <p>
+                <h2>DETAILS</h2>
+            </p>
+
+            <div class="details-arrival">
+
+                    <label>Arrive:</label>
+                    <input type="date" name="arrive" value="" placeholder="Arrive">
+                    <label>Depart:</label>
+                    <input type="date" name="depart" value="" placeholder="Deapart">
+
+            </p>
+            </div>
+
+
+            <div class="details-text">
+                <p>
+                    <select name="noofpeople" id="noofpeople" value="" placeholder="No Of People">
+                        <option value="" disabled selected>Number of People</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                      <select name="roomtype" id="roomtype" value="" placeholder="Room Type">
+                        <option value="" disabled selected>Room Type</option>
+                        <option value="deluxe">Deluxe</option>
+                        <option value="standard">Standard</option>
+                        <option value="sudget">Budget</option>
+                      </select>
+                      <select name="beds" id="beds" value="" placeholder="Beds">
+                        <option value="" disabled selected>Beds</option>
+                        <option value="single">Single</option>
+                        <option value="double">Double</option>
+                      </select>
+                </p>
+
+                
+            </div>
+
+            <br/>
+
+            <p>
+                <h5>Please describe your needs e.g. Extra beds, children's cots</h5>
+                <textarea id="describe_needs" name="describe_needs" rows="6" cols="50"></textarea>
+            </p>
+
+
+
+                <p class="submit">
+                    <input type="button" name="submit" value="Submit" id="submit">
+                    <input type="button" name="cancel" value="Cancel" id="cancel" onclick="return cancelform()">
+                    <input type="button" name="reset" value="Reset" id="cancel" onclick="resetform(this.form)">
+                </p>
+
+
+            
+
+        </form>
+
+    </div>
+
+</body>
+</html>
